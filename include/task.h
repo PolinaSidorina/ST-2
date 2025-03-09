@@ -4,6 +4,7 @@
 #include "circle.h"
 
 double Earth_and_Roop();
+
 double Pool();
 
-#endif  // INCLUDE_TASK_H_
+#endif  // INCLUDE_TASKS_H_
