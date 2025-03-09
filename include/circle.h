@@ -1,5 +1,7 @@
+// Copyright 2025 UNN-CS
 #ifndef INCLUDE_CIRCLE_H_
 #define INCLUDE_CIRCLE_H_
+#include <cstdint>
 #include <cmath>
 
 const double PI = 3.141592653589793238462;

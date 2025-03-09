@@ -1,3 +1,4 @@
+// Copyright 2025 UNN-CS
 #include <cstdint>
 #include "circle.h"
 
