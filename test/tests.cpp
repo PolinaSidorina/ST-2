@@ -1,3 +1,4 @@
+// Copyright 2025 UNN-CS Team
 #include <gtest/gtest.h>
 #include <cstdint>
 #include "task.h"
@@ -8,19 +9,19 @@
 TEST(circle_test, radius_1) {
     Circle c;
     c.setRadius(1);
-    EXPECT_DOUBLE_EQ(c.getRadius(), 1.0);
+    EXPECT_DOUBLE_EQ(c.getRadius(), 1);
 }
 
 TEST(circle_test, radius_2) {
     Circle c;
     c.setRadius(2);
-    EXPECT_DOUBLE_EQ(c.getRadius(), 1.0);
+    EXPECT_DOUBLE_EQ(c.getRadius(), 2);
 }
 
 TEST(circle_test, radius_0) {
     Circle c;
     c.setRadius(0);
-    EXPECT_DOUBLE_EQ(c.getRadius(), 1.0);
+    EXPECT_DOUBLE_EQ(c.getRadius(), 0);
 }
 
 TEST(circle_test, ference_1) {
@@ -49,28 +50,28 @@ TEST(circle_test, area_1) {
 
 TEST(circle_test, area_2) {
     Circle c;
-    c.setRadius(1);
+    c.setRadius(2);
     EXPECT_NEAR(c.getArea(), 4 * PI, 1e-6);
 }
 
 TEST(circle_test, area_0) {
     Circle c;
-    c.setRadius(1);
+    c.setRadius(0);
     EXPECT_NEAR(c.getArea(), 0, 1e-6);
 }
 
 TEST(circle_test, area_rad_by_fer) {
     Circle c;
     c.setFerence(10);
-    EXPECT_NEAR(c.getRadius(), 1.4323944, 1e-6);
-    EXPECT_NEAR(c.getArea(), 6.4457752, 1e-6);
+    EXPECT_NEAR(c.getRadius(), 1.5915, 1e-6);
+    EXPECT_NEAR(c.getArea(), 7.9577, 1e-6);
 }
 
 TEST(circle_test, fer_rad_by_area) {
     Circle c;
     c.setArea(10);
-    EXPECT_NEAR(c.getRadius(), 1.69256875, 1e-6);
-    EXPECT_NEAR(c.getFerence(), 10.6347231, 1e-6);
+    EXPECT_NEAR(c.getRadius(), 1.7841, 1e-6);
+    EXPECT_NEAR(c.getFerence(), 11.2099, 1e-6);
 }
 
 TEST(task_test_1, earth_and_roop) {

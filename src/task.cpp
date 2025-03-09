@@ -1,3 +1,4 @@
+// Copyright 2025 UNN-CS Team
 #include "task.h"
 
 double Earth_and_Roop() {
