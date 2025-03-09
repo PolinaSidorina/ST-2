@@ -15,10 +15,10 @@ double Pool() {
     Circle bound;
 
     pool.setRadius(3);
-    double track_cost = (pow(pool.getRadius() + 1, 2) * PI - pool.getArea()) * 1000;
+    double track_cost = (pow(pool.getRadius() + 1, 2) * PI - pool.getArea());
 
     bound.setRadius(pool.getRadius() + 1);
     double bound_cost = bound.getFerence() * 2000;
 
-    return track_cost + bound_cost;
+    return track_cost * 1000 + bound_cost;
 }

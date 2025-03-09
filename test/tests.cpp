@@ -63,21 +63,22 @@ TEST(circle_test, area_0) {
 TEST(circle_test, area_rad_by_fer) {
     Circle c;
     c.setFerence(10);
-    EXPECT_NEAR(c.getRadius(), 1.5915, 1e-6);
-    EXPECT_NEAR(c.getArea(), 7.9577, 1e-6);
+    EXPECT_NEAR(c.getRadius(), 1.5915, 1e-3);
+    EXPECT_NEAR(c.getArea(), 7.9577, 1e-3);
 }
 
 TEST(circle_test, fer_rad_by_area) {
     Circle c;
     c.setArea(10);
-    EXPECT_NEAR(c.getRadius(), 1.7841, 1e-6);
-    EXPECT_NEAR(c.getFerence(), 11.2099, 1e-6);
+    EXPECT_NEAR(c.getRadius(), 1.7841, 1e-3);
+    EXPECT_NEAR(c.getFerence(), 11.2099, 1e-3);
 }
 
 TEST(task_test_1, earth_and_roop) {
     double out = Earth_and_Roop();
     EXPECT_NEAR(out, 40074.7904909, 1e-6);
 }
+
 TEST(task_test_2, pool) {
     double out = Pool();
     EXPECT_NEAR(out, 72256.63, 1e-2);
